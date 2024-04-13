@@ -1,0 +1,79 @@
+/* .property {
+  display: flex;
+  grid-gap: 30px 24px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+} */
+
+body {
+    font-family: Whitney A, Whitney B, Whitney-Light, Catamaran, Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: auto;
+}
+
+.property {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 4px;
+}
+
+.details {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+}
+
+.amount{
+    font-weight: 400;
+}
+
+@media (min-width: 320px) {
+    .property {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .property {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .property {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1440px) {
+    .property {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.property-image {
+    height: 250px;
+    min-height: 250px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.landcard {
+    width: 300px;
+    height: 330px;
+    /* border: 3px solid none; */
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow:  1px 2px 1px rgba(90,90,90,.16)
+}
+
+.title {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
