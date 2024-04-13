@@ -46,7 +46,7 @@ export default function PropertyCard(props) {
                 <div className='details'> {total_land_size_in_acres.acres> 0 && <span >{total_land_size_in_acres.acres} acres</span>}  {total_land_size_in_acres.guntas > 0 && <span>{total_land_size_in_acres.guntas} guntas</span> } 
                 <span className='amount'>
                 {<span> • ₹ </span> } {price_per_acre_crore.crore > 0 && <>{price_per_acre_crore.crore} crore </>}
-                {price_per_acre_crore.lakh && <>{price_per_acre_crore.lakh} lakh </> }</span>
+                {price_per_acre_crore.lakh > 0 && <> {price_per_acre_crore.lakh} lakh </> }</span>
                 </div>
             </div>
         </div>
